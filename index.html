@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WM(wear-mall) 온라인 스토어</title>
+  <!-- 웹폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FontAwesome(폰트 아이콘) -->
+  <script src="https://kit.fontawesome.com/42bc809b80.js" crossorigin="anonymous"></script>
+  <!-- bx slider CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bx slider JS -->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- 상품 데이터 -->
+  <script src="./js/date.js"></script>
+  <!-- 사용자 자바스크립트 -->
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header id="main_header">
+    <div class="container">
+      <h1>
+        <a href="./index.html">
+          <img src="./images/logo.png" alt="WM(wear-mall)">
+        </a>
+      </h1>
+      <!-- 검색창 -->
+      <form id="search_box">
+        <input 
+          type="text"
+          placeholder="[윈터 홀리데이 켈럭션] 10% 추가 할인"
+        >
+        <button type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <!-- 유틸리티 메뉴 -->
+      <nav id="util_menu">
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-truck"></i></a>
+        <a href="#"><i class="fas fa-heart"></i></a>
+      </nav>
+    </div><!-- end container-->
+  </header>
+
+  <!-- 메인 GNB -->
+  <nav id="main_gnb">
+    <div class="container">
+      <button id="category_btn">
+        <i class="fas fa-bars"></i>
+        <span>카테고리</span>
+      </button>
+
+      <ul>
+        <li><a href="#">특가존</a></li>
+        <li><a href="#">랭킹</a></li>
+        <li><a href="#">브랜드</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">쿠폰</a></li>
+        <li><a href="#">맴버십</a></li>
+        <li><a href="#">매거진</a></li>
+        <li><a href="#">핫딜</a></li>
+      </ul>
+    </div><!-- end container -->
+  </nav>
+
+  <!-- 카테고리 메뉴 목록 -->
+  <nav id="category">
+    <div class="container">
+      <dl>
+        <dt><a href="#">wonan</a></dt>
+        <dd><a href="#">outer</a></dd>
+        <dd><a href="#">top</a></dd>
+        <dd><a href="#">dress</a></dd>
+        <dd><a href="#">bottom</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">man</a></dt>
+        <dd><a href="#">outer</a></dd>
+        <dd><a href="#">top</a></dd>
+        <dd><a href="#">bottom</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">kids</a></dt>
+        <dd><a href="#">outer</a></dd>
+        <dd><a href="#">top</a></dd>
+        <dd><a href="#">dress</a></dd>
+        <dd><a href="#">bottom</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">acc</a></dt>
+        <dd><a href="#">shoes</a></dd>
+        <dd><a href="#">bag</a></dd>
+        <dd><a href="#">etc</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">cosmetics</a></dt>
+        <dd><a href="#">face</a></dd>
+        <dd><a href="#">lip</a></dd>
+        <dd><a href="#">eye</a></dd>
+        <dd><a href="#">nail</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">life</a></dt>
+        <dd><a href="#">home</a></dd>
+        <dd><a href="#">life wear</a></dd>
+      </dl>
+    </div><!-- end container -->
+  </nav>
+
+  <!-- 메인 배너 -->
+  <section id="main_banner">
+    <div class="inner">
+      <div class="bx-slider">
+        <img class="img_responsive" src="images/main_banner01.jpg" alt="베너이미지1" title="2020 WM 겨울 세일">
+        <img class="img_responsive" src="./images/main_banner02.jpg" alt="베너이미지2" title="12월 플라, 다운 코트 12% 중복 할인쿠폰">
+        <img class="img_responsive" src="./images/main_banner03.jpg" alt="베너이미지3" title="키워드별 아우터 할인 + 10% 할인쿠폰">
+      </div>
+    </div><!-- end inner -->
+  </section>
+
+  <!-- 메인 콘텐츠 -->
+  <section id="top_seller">
+    <div class="container"><!-- end container-->
+      <h2><span>BEST</span> ITEM</h2>
+      <ul class="item_list">
+        
+        
+      </ul>
+    </div><!-- end container-->
+  </section>
+
+  <!-- 핫딜 -->
+  <section id="hot_d">
+    <div class="container">
+      <h2><span>HOT</span> DEAL</h2>
+      <ul class="hot_list">
+        <li><a href="#">
+          <div class="img_wrap">
+            <img src="./images/hot_1.png" alt="라우렐 탈모 샴푸">
+          </div>
+            <i class="fas fa-heart"></i><p><span>43%</span> <strong>17,910원</strong><br>라우렐 탈모 샴푸 500ml*2+1 증정</p></a>
+        </li>
+        <li><a href="#">
+          <div class="img_wrap">
+            <img src="./images/hot_2.png" alt="(다운)후디숏 오버핏점퍼"><i class="fas fa-heart"></div>
+            </i><p><span>37%</span> <strong>125,370원</strong><br> (다운)후디숏 오버핏점퍼</p></a>
+        </li>
+        <li><img src="./images/hot_3.png" alt="크리스마스 키워드">
+          <ul class="tag">
+            <li><span>연말과 크리스마스를 더욱 즐겁게<br> 보내는 방법!</span></li>
+            <li><a href="#">#연말 아이템</a></li>
+            <li><a href="#">#연말 파티룩</a></li>
+            <li><a href="#">#윈터 아이템</a></li>
+            <li><a href="#">#크리스마스</a></li>
+            <li><a href="#">#윈터 백</a></li>
+            <li><a href="#">#크리스마스 선물</a></li>
+          </ul>
+        </li>
+        <li><a href="#">
+          <div class="img_wrap">
+            <img src="./images/hot_4.png" alt="바오 비니 블루"></div>
+            <i class="fas fa-heart"></i><p><span>25%</span> <strong>23,490원</strong><br>바오 비니 블루</p></a>
+        </li>
+        <li><a href="#">
+          <div class="img_wrap">
+          <img src="./images/hot_5.png" alt="Winter Wonderland SET"></div>
+          <i class="fas fa-heart"></i><p><span>42%</span> <strong> 30,500원</strong><br>WM Winter Wonderland SET</p></a>
+        </li>
+        <li><a href="#">
+          <div class="img_wrap">
+            <img src="./images/hot_6.png" alt="LAP 하이넥 숏패딩"></div>
+            <i class="fas fa-heart"></i><p><span>65%</span><strong>69,650원</strong><br>LAP 하이넥 숏패딩</p></a>
+        </li>
+
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- 브랜드 추천 -->
+  <section id="brand">
+    <div class="container"><!-- end container -->
+      <h2><span>BRAND</span> FOCUS</h2>
+      <ul>
+        <li>
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <span class="title">I HATE MONDY</span>
+            <i class="far fa-heart"></i>
+            <ul class="hash_tag">
+              <li>#양말</li>
+              <li>#월요일</li>
+              <li>#양말세트</li>
+              <li>#포인트양말</li>
+            </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>Happy Christmas SET *체크 파우치 증정</h4></li>
+              <li class="day">11.18~12.31</li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <span class="title">LAPCOS</span>
+            <i class="far fa-heart"></i>
+            <ul class="hash_tag">
+              <li>#감각적인</li>
+              <li>#화장품</li>
+              <li>#뷰티</li>
+            </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>기초 제품 라인 100개 한정판매</h4></li>
+              <li class="day">12.01~01.31</li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <span class="title">PLASTIC <br> ISLAND</span>
+            <i class="far fa-heart"></i>
+            <ul class="hash_tag">
+              <li>#SPA브랜드</li>
+              <li>#베이직</li>
+              <li>#착용감</li>
+              <li>#실용적인</li>
+            </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>이너상품 20% 할인</h4></li>
+              <li class="day">12.12~12.31</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+    </div><!-- end container -->
+  </section>
+
+  
+  <footer id="main_footer">
+    <div id="footer_wrap">
+    <div id="container">
+      <ul>
+        <li><a href="#">WM 소개</a></li>
+        <li>|</li>
+        <li><a href="#">채용정보</a></li>
+        <li>|</li>
+        <li><a href="#">이용약관</a></li>
+        <li>|</li>
+        <li><strong><a href="#">개인정보처리방침</a></strong></li>
+        <li>|</li>
+        <li><a href="#">청소년보호정책</a></li>
+        <li>|</li>
+        <li><a href="#">전자금융거래약관</a></li>
+        <li>|</li>
+        <li><a href="#">제휴ㆍ광고</a></li>
+      </ul>
+    </div>
+    <div class="line"></div>
+    <div class="wrap1">
+      <p><span>(주)WearMall</span> <br>
+      서울시 강남구 테헤란로152(역삼동 강남파이낸스센터) ㆍ 대표이사: 김광현 <br>
+        사업자등록번호: 202-91-58676 ㆍ 통신판매업신고: 강남 20352호 <br>
+        Fax:02-625-7752</p>
+    </div>
+    <div class="wrap2">
+      <span>고객센터 ></span><br>
+      <p>Tel: <a href="#">1588-7752</a>(평일 09:00 ~ 18:00) ㆍ 스마일클럽/SVIP전용: <a href="#">1522-7752</a>(365일 09:00 ~ 18:00) <br>
+        경기도 부천시 원미구 부일로 325 (상동) 루나빌딩 3층 <br>
+        Fax: 02-589-7752 ㆍ Mail: wearmall@corp.wearmall.co.kr</p>
+    </div>
+  </div>
+  <div class="wrap3">
+    <div class="wrap3_wrap">
+    <p>(주)WearMall 사이트의 상품/판매자/쇼핑정보/컨텐츠 등에 대한 무단 복제, 전송, 배포 등의 행위는 저작권법, 콘텐츠사업 진흥법 등에 의하여 엄격히 금지 됩니다. <span><a href="#">콘텐츠산업 진흥법에 따른 표시</a></span> <br> (주)wearmall은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 wearmall은 상품거래정보 및 거래에 대하여 책임을 지지 않습니다. <br>
+    Copyright &copy; wearmall Korea Co., Ltd. All rights Reserved.</p>
+    <div class="sns">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+  </div>
+  </footer>
+</div>
+
+</body>
+</html>
